@@ -132,7 +132,7 @@ public class Panel_add_Vacations extends JPanel {
 		// if admin is logged in
 		vacations = Logic.getInstance().getHospitalDoctorsVacations(cbHospitalName.getSelectedItem().toString());
 		//else - line below
-		vacationDates = Logic.getInstance().getDoctorVacations("305911853"); // need to change according to whichever doctor logs in
+		vacationDates = Logic.getInstance().getDoctorVacations("305911853");
 		Date dt = new Date();
 		Calendar c = Calendar.getInstance();
 		c.setTime(dt);
@@ -200,7 +200,6 @@ public class Panel_add_Vacations extends JPanel {
 
 					@Override
 					public String getInvalidTooltip() {
-						//return "This day has already been registered as a day off!"; for specific doctor
 						return null;
 					}
 
@@ -236,10 +235,6 @@ public class Panel_add_Vacations extends JPanel {
 
 					@Override
 					public boolean isInvalid(Date arg0) {
-						/*for (Date d : vacationDates) for specific doctor
-						if (arg0.equals(d))
-						return true;
-						return false;*/
 						return false;
 						
 						
@@ -320,26 +315,7 @@ public class Panel_add_Vacations extends JPanel {
 					}
 					else
 					{
-						//if doctor does this
-				/*	Logic.getInstance().AddVacationDay("305911853", date); // need to change according to whichever doctor logs in
-					JOptionPane.showMessageDialog(null, date + " has successfully been registered as a day off!");
-					vacationDates = Logic.getInstance().getDoctorVacations("305911853"); // need to change according to whichever doctor logs in
-					dt = new Date();
-					c = Calendar.getInstance();
-					c.setTime(dt);
-					c.add(Calendar.DATE, 1);
-					dt = c.getTime();
-					dt.setHours(0);
-					dt.setMinutes(0);
-					dt.setSeconds(0);
-					vacationDate.setMinSelectableDate(dt);
-					c.set(Calendar.DAY_OF_MONTH, 1);
-					dt = c.getTime();
-					int num = vacationDate.getMonthChooser().getMonth();
-					vacationDate.setDate(dt);
-					vacationDate.getMonthChooser().setMonth(0);
-					vacationDate.getMonthChooser().setMonth(num); */
-					// else if admin does this
+					// if admin does this
 						if (adminLoggedIn==true){
 							trigger=true;
 						doctors = Logic.getInstance().getDoctorsOfHospital(cbHospitalName.getSelectedItem().toString());

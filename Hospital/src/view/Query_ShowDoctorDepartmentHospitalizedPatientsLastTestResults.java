@@ -189,17 +189,6 @@ public class Query_ShowDoctorDepartmentHospitalizedPatientsLastTestResults exten
 		if (iteration ==0) {
 		 	iteration++;
 			}
-		  /*  else{
-
-		    	table.getColumnModel().getColumn(0).getCellEditor().stopCellEditing();
-		    	table.getColumnModel().getColumn(1).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(2).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(3).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(4).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(5).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(6).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(7).getCellEditor().stopCellEditing();
-		    }*/
 
 		//Following code clear table (used while browsing between orders)
 		tableModel =(DefaultTableModel) table.getModel();
@@ -228,15 +217,7 @@ public class Query_ShowDoctorDepartmentHospitalizedPatientsLastTestResults exten
 	 	// 	First row is been focused and selected by default
 	    table.changeSelection(0, 0, false, false);
 	    table.requestFocus();
-	   
-	   /* //set column components
-	    setUpProductNameColumnComboBox(table, table.getColumnModel().getColumn(1));
-	 	setUpTextEditor(table, 0,tfProductId);
-	 	setUpTextEditor(table, 2,tfUnitPrice);
-	 	setUpTextEditor(table, 3,tfQuantity);
-	 	setUpTextEditor(table, 4,tfDiscount);
-	 	setUpTextEditor(table, 5,tfTotal);
-*/
+
 	 	//Notifies all listeners that all cell values in the table's rows may have changed.
 	 	tableModel.fireTableDataChanged();
 	

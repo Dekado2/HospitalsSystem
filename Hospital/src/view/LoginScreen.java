@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package view;
 
 
@@ -111,9 +107,6 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
-          /*  public void windowClosing(java.awt.event.WindowEvent evt) {
-                formWindowClosing(evt);
-            } */
         });
 
         desktopPaneLogin.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -129,7 +122,7 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
 
         jSeparator1.setForeground(new Color(51, 153, 204));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24));
         jLabel3.setForeground(new Color(51, 153, 204));
         jLabel3.setText("S.A Hospitals Systems");
 
@@ -140,7 +133,7 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
         jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
 
         user.setBackground(new Color(0, 102, 204));
-        user.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        user.setFont(new java.awt.Font("Tahoma", 0, 14));
         user.setForeground(new java.awt.Color(204, 204, 204));
         user.setText("Username");
         user.setToolTipText("Username");
@@ -179,17 +172,15 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
         jPanel3.setBackground(jPanel2.getBackground());
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-              //  jPanel3MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jPanel3MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-               // jPanel3MouseExited(evt);
             }
         });
 
-        forgotPassword.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        forgotPassword.setFont(new java.awt.Font("Tahoma", 0, 14));
         forgotPassword.setForeground(new java.awt.Color(255, 255, 255));
         forgotPassword.setText("Forgot Password?");
         forgotPassword.setToolTipText("");
@@ -222,7 +213,7 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
         );
 
         languageComboBox.setBackground(jPanel2.getBackground());
-        languageComboBox.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        languageComboBox.setFont(new java.awt.Font("Tahoma", 1, 10));
         languageComboBox.setForeground(new java.awt.Color(255, 255, 255));
         languageComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "English"}));
         languageComboBox.setBorder(null);
@@ -233,7 +224,7 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
         });
 
         login.setBackground(new Color(51, 153, 204));
-        login.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        login.setFont(new java.awt.Font("Tahoma", 1, 12));
         login.setForeground(new java.awt.Color(255, 255, 255));
         login.setText("Login");
         login.setBorder(null);
@@ -345,12 +336,8 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>                        
+    }                        
 
-  /*  private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {                                     
-        ForgotPassword(this, languageComboBox);
-    }                                    
-*/
     private void userActionPerformed(java.awt.event.ActionEvent evt) {                                     
           if (login.isEnabled())
         loginActionPerformed(evt);
@@ -358,7 +345,6 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {                                      
                     
-           Boolean bool;
            String pass=password.getText();
            Verification(user.getText(),pass,this,languageComboBox);
     }                                     
@@ -541,30 +527,7 @@ public class LoginScreen extends javax.swing.JFrame implements Serializable {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-/*        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new LoginScreen().setVisible(true);

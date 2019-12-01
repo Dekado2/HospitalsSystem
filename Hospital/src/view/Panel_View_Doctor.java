@@ -197,7 +197,6 @@ public class Panel_View_Doctor extends JPanel {
 							JOptionPane.showMessageDialog(null, "You must first select a doctor from the table!");
 						else
 						{
-							//לטפל במקרה של CheckedBy
 							hosp=Logic.getInstance().getHospitalized();
 							patients=Logic.getInstance().getPatients();
 							
@@ -247,17 +246,6 @@ public class Panel_View_Doctor extends JPanel {
 		if (iteration ==0) {
 		 	iteration++;
 			}
-		  /*  else{
-
-		    	table.getColumnModel().getColumn(0).getCellEditor().stopCellEditing();
-		    	table.getColumnModel().getColumn(1).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(2).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(3).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(4).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(5).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(6).getCellEditor().stopCellEditing();
-				table.getColumnModel().getColumn(7).getCellEditor().stopCellEditing();
-		    }*/
 
 		//Following code clear table (used while browsing between orders)
 		tableModel =(DefaultTableModel) table.getModel();
@@ -300,14 +288,6 @@ public class Panel_View_Doctor extends JPanel {
 	    table.changeSelection(0, 0, false, false);
 	    table.requestFocus();
 	   
-	   /* //set column components
-	    setUpProductNameColumnComboBox(table, table.getColumnModel().getColumn(1));
-	 	setUpTextEditor(table, 0,tfProductId);
-	 	setUpTextEditor(table, 2,tfUnitPrice);
-	 	setUpTextEditor(table, 3,tfQuantity);
-	 	setUpTextEditor(table, 4,tfDiscount);
-	 	setUpTextEditor(table, 5,tfTotal);
-*/
 	 	//Notifies all listeners that all cell values in the table's rows may have changed.
 	 	tableModel.fireTableDataChanged();
 	

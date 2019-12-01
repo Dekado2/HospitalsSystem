@@ -363,7 +363,7 @@ public class Panel_add_Patient extends JPanel {
 							    radioButtonMale.setSelected(false);
 							    contactSwitch = true;
 							}
-                            // change title to add contact, make variables to take previous values of patient and clear them to add contact, then return patient values and set contact id
+                            
 						}
 						else
 						{

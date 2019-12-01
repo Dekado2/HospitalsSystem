@@ -1,9 +1,5 @@
 package view;
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 
 import java.awt.Color;
@@ -341,20 +337,6 @@ public class ForgotPassword extends javax.swing.JFrame {
     }                               
 
     private void languageComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                 
-
-       
-     /*   if (languageComboBox.getSelectedItem().equals("English") || languageComboBox.getSelectedItem().equals("Choose a language"))
-        {
-            Locale l = new Locale("en", "US");
-            userLabel.setText(r.getString("ForgotPassword.userLabel.text"));
-            secretQuestionLabel.setText(r.getString("ForgotPassword.secretQuestionLabel.text"));
-            Proceed.setText(r.getString("ForgotPassword.Proceed.text"));
-            Back.setText(r.getString("ForgotPassword.Back.text"));
-            secretAnswerLabel.setText(r.getString("ForgotPassword.secretAnswerLabel.text"));
-            Username.setToolTipText(r.getString("ForgotPassword.Username.toolTipText"));
-            secretQuestion.setToolTipText(r.getString("ForgotPassword.secretQuestion.toolTipText"));
-            secretAnswer.setToolTipText(r.getString("ForgotPassword.secretAnswer.toolTipText"));
-        } */
         
     }                                                
 

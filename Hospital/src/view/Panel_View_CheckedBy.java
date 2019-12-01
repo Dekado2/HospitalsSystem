@@ -238,14 +238,6 @@ public class Panel_View_CheckedBy extends JPanel {
 	    table.changeSelection(0, 0, false, false);
 	    table.requestFocus();
 
-	   /* //set column components
-	    setUpProductNameColumnComboBox(table, table.getColumnModel().getColumn(1));
-	 	setUpTextEditor(table, 0,tfProductId);
-	 	setUpTextEditor(table, 2,tfUnitPrice);
-	 	setUpTextEditor(table, 3,tfQuantity);
-	 	setUpTextEditor(table, 4,tfDiscount);
-	 	setUpTextEditor(table, 5,tfTotal);
-*/
 	 	//Notifies all listeners that all cell values in the table's rows may have changed.
 	 	tableModel.fireTableDataChanged();
 	 
@@ -286,12 +278,6 @@ public class Panel_View_CheckedBy extends JPanel {
 	public Panel_update_HospitalizationDetails getUpdateHosp() {
 		return updateHosp;
 	}
-	
-	
-	/*
-	 *     	 
-	    	  
-	 */
 	
 	
 	

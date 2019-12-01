@@ -281,18 +281,6 @@ private String userName;
 
     private void languageComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                 
 
-       /* if (languageComboBox.getSelectedItem().equals("English") || languageComboBox.getSelectedItem().equals("Choose a language"))
-        {
-            Locale l = new Locale("en", "US");
-            newPasswordLabel.setText(r.getString("PasswordReset.newPasswordLabel.text"));
-            verifyNewPasswordLabel.setText(r.getString("PasswordReset.verifyNewPasswordLabel.text"));
-            submit.setText(r.getString("PasswordReset.submit.text"));
-            back.setText(r.getString("PasswordReset.back.text"));
-            showPassword.setText(r.getString("PasswordReset.showPassword.text"));
-            newPassword.setToolTipText(r.getString("PasswordReset.newPassword.toolTipText"));
-            verifyNewPassword.setToolTipText(r.getString("PasswordReset.verifyNewPassword.toolTipText"));
-        } */
-
     }                                                                            
 
     private void emptyFields(JTextField newPassword, JPasswordField verifyNewPassword, JButton submit){
